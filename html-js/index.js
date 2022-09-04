@@ -1,15 +1,18 @@
 
 let h1 = document.querySelector('h1'); // Por etiquetas
 
-let p = document.querySelector('p'); // "
+/* let p = document.querySelector('p'); // "
 
 let dosParrafos = document.querySelector('.dosParrafos');
 
-let tresParrafos = document.querySelector('#tresParrafos');
+let tresParrafos = document.querySelector('#tresParrafos'); */
 
-let input = document.querySelector('input');
+let input1 = document.querySelector('#calculo1');
+let input2 = document.querySelector('#calculo2');
+let button = document.querySelector('#btnCalcular');
+let pResult = document.querySelector('#result');
 
-console.log({
+/* console.log({
 
     h1,
     p,
@@ -42,4 +45,17 @@ const IMG = document.createElement('img');
 IMG.setAttribute('src','https://static.platzi.com/static/images/conf/logo_black@2x.png');
 console.log(IMG);
 tresParrafos.innerHTML="";
-tresParrafos.appendChild(IMG);
+tresParrafos.appendChild(IMG); */
+
+//button.addEventListener();
+
+function btnOnClick() {
+
+    let value1 = parseFloat(input1.value);
+    let value2 = parseFloat(input2.value);
+
+    let sum = value1 + value2;
+
+    pResult.innerHTML = sum;
+    
+}
