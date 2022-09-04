@@ -9,7 +9,8 @@ let tresParrafos = document.querySelector('#tresParrafos'); */
 
 let input1 = document.querySelector('#calculo1');
 let input2 = document.querySelector('#calculo2');
-let button = document.querySelector('#btnCalcular');
+let btn = document.querySelector('#btnCalcular');
+let form = document.querySelector('#form');
 let pResult = document.querySelector('#result');
 
 /* console.log({
@@ -49,13 +50,16 @@ tresParrafos.appendChild(IMG); */
 
 //button.addEventListener();
 
-function btnOnClick() {
+function btnOnClick(event) {
 
+    event.preventDefault();
     let value1 = parseFloat(input1.value);
     let value2 = parseFloat(input2.value);
 
     let sum = value1 + value2;
 
-    pResult.innerHTML = sum;
+    pResult.innerHTML = "Resultado: " +  sum;
     
 }
+
+form.addEventListener('submit', btnOnClick);
