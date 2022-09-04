@@ -38,7 +38,7 @@ while (sw == 1) {
     
     let response  = prompt('Cuánto es 2 + 2?')
 
-    if (response === 4) {
+    if (response == 4) {
 
         sw = 0;
         console.log("Ha finalizado.")
