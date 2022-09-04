@@ -48,3 +48,5 @@ function printElementbyElementObj(obj) {
     
 }
 
+
+// console.warn hacer advertencias
